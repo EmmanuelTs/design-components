@@ -10,8 +10,35 @@
 </head>
 <body>
 <form>
-    <h1>Emergency Contact and Medical Information</h1>
-    
 
+    <h1>Emergency Contact and Medical Information</h1>
+    <div> <p> <legend> Name </legend>
+        <input id="firstname-patient" name="firstname-patient" type="text" size="10">
+        <input id="lastname-patient" name="lastname-patient" type="text" size="15"></p><p class="f1-2">
+        <small>First</small>
+        <small class="last">Last</small>
+        <p>
+            <legend>Gender</legend>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <p>
+            <legend>Date of Birth</legend>
+            <input type="number" name="month" min="1" max="12" size="2">
+            /
+            <input type="number" name="date" min="1" max="31" size="2">
+            /
+            <input type="number" name="year" min="1900" max="9999" size="4">
+        </p>
+        <p >
+            <small>MM</small>
+            <small class="day">DD</small>
+            <small class="year">YYYY</small>
+        </p>
+    </div>
+</form>
  </body>
 </html>
